@@ -56,3 +56,6 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
+
+# parcel output
+.parcel-cache/
