@@ -37,7 +37,7 @@ export class WaterTexture {
     this.clear();
   }
   clear() {
-    this.ctx.fillStyle = "black";
+    this.ctx.fillStyle = "white";
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
   addPoint(point) {
