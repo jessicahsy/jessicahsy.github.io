@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jessica Ho</title>
     <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Jessica (Shin-Yi) Ho</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -20,38 +20,53 @@
     
 
 <main>
-    <section>
-        <h2>Tennis: VR Game</h2>
-        <div class="description">
-            <p>This Unity game is made for Meta Quest 3. It simulating real-life tennis <br>
-                and supports single player mode with a computer opponent.</p>
-            <p>Handcontrollers are used, with grab buttons used to grab the racket and the ball.<br>
-               The red trajectory line predicts the line on which the ball should fall. 
-            </p>
+    <section>   <div class="slideshow-container">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      
+        <!-- Slide 1: YouTube video -->
+        <div class="slide">
+          <iframe
+
+            src="https://www.youtube.com/embed/TQ0T2TRbkCc"
+            title="YouTube Shorts video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="width: 100%; max-width: 600px; height: 500px; display: block; margin: 0 auto; border-radius: 15px;"
+            >
+          </iframe>
         </div>
-        
-        <div class="image-gallery">
-            <figure class="rounded-rectangle">
-                <img src="../src/vrtennis/menu.png" alt="Menu">
-                <figcaption>Menu</figcaption>
-            </figure>
-            <figure class="rounded-rectangle">
-                <img src="../src/vrtennis/opponent.png" alt="opponent">
-                <figcaption>Opponent</figcaption>
-            </figure>
+      
+        <!-- Slide 2: menu img -->
+        <div class="slide">
+            <img src="../src/vrtennis/menu.png" alt="Menu">
         </div>
-        <p><br></p>
-        <!--
-        <video controls>
-            <source src="src/vrtennis/demo-bot.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        -->
+      
+        <!-- Slide 3: bot -->
+        <div class="slide">
+          <img src="../src/vrtennis/opponent.png" alt="Opponent">
+        </div>
+      
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      
+      <div class="slide-counter" id="slide-counter">1 of 3</div>
     </section>
 </main>
-    <footer>
-        <p>"Last updated: March 2025"</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 jessicahsy</p>
+    <div class="footer-icons">
+      <a href="mailto:jessicashinyiho@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/jessicahsy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/shin-yi-ho" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
     <script src="../js/scripts.js"></script>
 </body>
 </html>

@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="../src/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jessica Ho</title>
+  <link rel="stylesheet" href="../src/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1>Jessica (Shin-Yi) Ho</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
 
-<main>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <section>
-        <h2>Burd: VR Game</h2>
-        <div class="description">
-            <p>This Unity game is made for Meta Quest 2 and contains three mini-games simulating the life of a bird. <br></p>
-            <p> Arm flapping motions is used in Race for forward locomotion, and the joystick controls for movement direction.<br>
-               Feast and Plop uses the hand controllers to aim at targets.
-            </p>
-        </div>
-        
-        <div class="image-gallery">
-            <figure class="rounded-rectangle">
-                <img src="../src/burd/race.png" alt="Race">
-                <figcaption>Race</figcaption>
-            </figure>
-            <figure class="rounded-rectangle">
-                <img src="../src/burd/feast.png" alt="Feast">
-                <figcaption>Feast</figcaption>
-            </figure>
-            <figure class="rounded-rectangle">
-                <img src="../src/burd/plop.png" alt="Plop">
-                <figcaption>Plop</figcaption>
-            </figure>
-        </div>
-        <p><br></p>
-        <!--
-        <video controls>
-            <source src="src/burd/burdDemoFinal.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>-->
+      <h2>Burd: VR Game</h2>
+      <div class="description">
+        <p>This Unity game is made for Meta Quest 2 and contains three mini-games simulating the life of a bird.</p>
+        <p><strong>Race</strong> uses arm flapping motions for forward locomotion, with the joystick controlling direction.<br>
+           <strong>Feast</strong> and <strong>Plop</strong> use hand controllers to aim at targets.</p>
+      </div>
 
+      <div class="slideshow-container">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+
+        <div class="slide">
+          <img src="../src/burd/race.png" alt="Race" />
+        </div>
+        <div class="slide">
+          <img src="../src/burd/feast.png" alt="Feast" />
+        </div>
+        <div class="slide">
+          <img src="../src/burd/plop.png" alt="Plop" />
+        </div>
+
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+
+      <div class="slide-counter" id="slide-counter">1 of 3</div>
     </section>
-</main>
-    <footer>
-        <p>Last updated: March 2025</p>
-    </footer>
-    <script src="../js/scripts.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 jessicahsy</p>
+    <div class="footer-icons">
+      <a href="mailto:jessicashinyiho@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/jessicahsy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/shin-yi-ho" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 </html>
