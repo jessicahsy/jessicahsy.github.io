@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jessica Ho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <style>
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background-color: #eaeaea;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="model-wrapper">
+        <!-- Slide 1: Cat Head -->
+        <div id="catSlide" class="slide active">
+            <model-viewer
+                src="/src/art/cat_head.blend.glb"
+                alt="3D cat model"
+                shadow-intensity="1"
+                camera-orbit="90deg 85deg 300m"
+                field-of-view="30deg"
+                min-camera-orbit="-30deg auto auto"
+                max-camera-orbit="90deg auto auto"
+                environment-image="https://modelviewer.dev/shared-assets/environments/aircraft_workshop_01_1k.hdr"
+                touch-action="pan-y"
+                auto-rotate
+            ></model-viewer>
+        
+            <div class="model-info-overlay">
+                <p id="modelInfo"><strong>3D Cat Head</strong><br />Made with Blender</p>
+            </div>
+        </div>
+        <!-- Slide 2: Coming Soon -->
+        <div id="comingSlide" class="slide coming-soon">
+            <div class="coming-text">
+            <p><strong>Coming soon...</strong></p>
+            </div>
+        </div>
+  
+        <button class="nav-btn left" onclick="toggleSlide()">&#10094;</button>
+        <button class="nav-btn right" onclick="toggleSlide()">&#10095;</button>
+    </div>
+
+  </body>
+  <footer>
+    <p>&copy; 2025 jessicahsy</p>
+    <a>3D model viewer powered by <a href="https://modelviewer.dev/" target="_blank" rel="noopener noreferrer">&lt;model-viewer&gt;</a>
+   
+    <div class="footer-icons">
+      <a href="mailto:jessicashinyiho@example.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/jessicahsy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/shin-yi-ho" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  
+  <script>
+    let showingCat = true;
+  
+    function toggleSlide() {
+      const catSlide = document.getElementById("catSlide");
+      const comingSlide = document.getElementById("comingSlide");
+  
+      if (showingCat) {
+        catSlide.classList.remove("active");
+        comingSlide.classList.add("active");
+      } else {
+        comingSlide.classList.remove("active");
+        catSlide.classList.add("active");
+      }
+  
+      showingCat = !showingCat;
+    }
+  </script>
+  
+  
+  
+</html>
