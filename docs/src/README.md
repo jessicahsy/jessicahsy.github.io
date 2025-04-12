@@ -1,2 +1,12 @@
-Model Viewer: https://modelviewer.dev/
-An open-source web component by Google for rendering 3D models in HTML.
+index.html
+-Three.js
+
+art.html
+-Model Viewer
+
+
+Notes:
+Apr-12
+- TODO: high LCP
+
+docs --> flattened for github pages deployment
