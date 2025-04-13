@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { WaterTexture } from "./WaterTexture";
+import { WaterTexture } from "./WaterTexture.js";
 console.clear();
 class App {
   constructor() {
