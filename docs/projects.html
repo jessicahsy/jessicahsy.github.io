@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Jessica Ho</title>
+  <link rel="stylesheet" href="../src/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Projects</h1>
+      <div class="dropdown-section">
+        <h2 class="dropdown-toggle">Applications</h2>
+        <div class= "dropdown-content"> 
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/vrtennis/tennis_icon.png" alt="TennisVR Icon" />
+                <div>
+                    <h4>TennisVR <em style="font-weight: normal;">– VR App</em></h4>
+                    <p>A realistic VR tennis game built for Meta Quest 3 with a CPU opponent.</p>
+                    <a href="/pages/tennis.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/burd/burd_icon.png" alt="Burd Icon" />
+                <div>
+                    <h4>Burd<em style="font-weight: normal;"> - VR App</em></h4>
+                    <p>A mini game series where you get to flap your arms and be a silly bird.</p>
+                    <a href="/pages/burd.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/arda/arda_icon.png" alt="ARDA Icon" />
+                <div>
+                    <h4>ARDA <em style="font-weight: normal;">– Web App</em></h4>
+                    <p>Autonomous Room Decoration Assistant prototype.</p>
+                    <p style="font-style: italic; color: grey;">WIP</p>
+                    <a href="/pages/arda.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/wave/wave_icon.png" alt="Wave Icon" />
+                <div>
+                    <h4>Wave <em style="font-weight: normal;">– Mobile App</em></h4>
+                    <p>An app for sharing and discovering local events to help you connect with your community.</p>
+                    <a href="/pages/wave.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="dropdown-section">
+        <h2 class="dropdown-toggle">Other</h2>
+        <div class="dropdown-content">
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/art/cat_head_1.png" alt="Cat Model Icon" />
+                <div>
+                    <h4>3D Modeling</h4>
+                    <p>Models made in Blender.</p>
+                    <a href="/pages/art.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/bittertones/bitter_icon.png" alt="Bittertones Icon" />
+                <div>
+                    <h4>Bittertones <em style="font-weight: normal;">– Website</em></h4>
+                    <p>A interactive website for Bittertones, an event organizer based in SoCal.</p>
+                    <p style="font-style: italic; color: grey;">Coming Soon</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="project-entry">
+            <div class="proj-desc">
+                <img src="../src/unscammed/unscammed_icon.png" alt="Unscammed Icon" />
+                <div>
+                    <h4>Unscammed <em style="font-weight: normal;">– UI Figma</em></h4>
+                    <p>Figma prototype for the elderly to fend against scammers.</p>
+                    <a href="/pages/unscammed.html">View Project →</a>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 jessicahsy</p>
+    <div class="footer-icons">
+      <a href="mailto:jessicashinyiho@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/jessicahsy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/shin-yi-ho" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+document.querySelectorAll('.dropdown-toggle').forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    const nextSection = toggle.nextElementSibling;
+    nextSection.classList.toggle('hidden');
+  });
+});
+  </script>
+</body>
+</html>
