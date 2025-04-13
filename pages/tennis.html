@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Ho</title>
+    <title>VR Tennis | Jessica Ho</title>
     <link rel="stylesheet" href="../src/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     
 
 <main>
-    <section>   <div class="slideshow-container">
+    <section>
+      <h2>VRTennis: VR Game</h2>
+      <div class="description">
+        <p>A VR game built for Meta Quest 3 simulating tennis gameplay with CPU opponents, realistic physics, and interactive scorekeeping.</p>
+        <p style="font-size: 1rem;"><strong>Technologies Used:</strong> Unity, OpenXR, XR Interaction Toolkit</p>
+      </div>
+      <div class="slideshow-container">
         <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
       
         <!-- Slide 1: YouTube video -->
         <div class="slide">
           <iframe
-
             src="https://www.youtube.com/embed/TQ0T2TRbkCc"
             title="YouTube Shorts video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             style="width: 100%; max-width: 600px; height: 500px; display: block; margin: 0 auto; border-radius: 15px;"
-            >
-          </iframe>
+          ></iframe>
         </div>
       
         <!-- Slide 2: menu img -->
         <div class="slide">
-            <img src="../src/vrtennis/menu.png" alt="Menu">
+            <img src="../src/vrtennis/menu.png" alt="Menu" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
         </div>
       
         <!-- Slide 3: bot -->
         <div class="slide">
-          <img src="../src/vrtennis/opponent.png" alt="Opponent">
+          <img src="../src/vrtennis/opponent.png" alt="Opponent" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
         </div>
       
         <button class="next" onclick="plusSlides(1)">&#10095;</button>
